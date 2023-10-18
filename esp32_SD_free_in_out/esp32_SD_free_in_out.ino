@@ -45,13 +45,13 @@ ext::File root;
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);
 
 //WIFI用户名密码
-const char* ssid = "lp-100";
-const char* password = ".--...-.-.zzy";
+const char* ssid = "Admin";
+const char* password = "123456789";
 
 //onenet
 int god = 0;
-const char *mqtt_server = "183.230.40.96"; //onenet 的 IP地址
-const int port = 6002;                     //端口号
+const char *mqtt_server = "xxx.xxx.xxx.xxx"; //onenet 的 IP地址
+const int port = xxxx;                     //端口号
  
 //本地服务器网页内容
 String web_head = "<!DOCTPYE html><html><head><meta charset='utf-8'></head><body>";
@@ -60,7 +60,7 @@ String SD_data_Directory = "";
 String SD_data = "";
 
 //传感器数据容器
-const int node_number_max = 7;        //最大可接受传感器数量   max=37
+const int node_number_max = 7;        //最大可接受传感器数量   max=5999   单本代码的string和int转换仅支持到10，如需增加请自行跳转至下方函数增加
 String DATA_name[7] = {"记录次数","节点名称","烟雾","光照","湿度","温度","警告"};//{"times","num","smog","light","humi","temp","worning"}; 
 String DATA = "";              // 接收数据容器
 String DATA_temporary = "";    // 临时接收数据容器
