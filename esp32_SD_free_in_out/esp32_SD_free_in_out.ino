@@ -60,7 +60,7 @@ String SD_data_Directory = "";
 String SD_data = "";
 
 //传感器数据容器
-const int node_number_max = 7;        //最大可接受传感器数量   max=5999   单本代码的string和int转换仅支持到10，如需增加请自行跳转至下方函数增加
+const int node_number_max = 7;        //最大可接受传感器数量   max=5999   但本代码的string和int转换仅支持到10，如需增加请自行跳转至下方函数增加
 String DATA_name[7] = {"记录次数","节点名称","烟雾","光照","湿度","温度","警告"};//{"times","num","smog","light","humi","temp","worning"}; 
 String DATA = "";              // 接收数据容器
 String DATA_temporary = "";    // 临时接收数据容器
