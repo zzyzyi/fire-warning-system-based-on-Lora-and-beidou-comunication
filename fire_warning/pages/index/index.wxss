@@ -1,0 +1,47 @@
+.background{
+  background-color: #e48b62;
+  width: 100%;
+  height: 100vh;
+}
+.swiper{
+  height: 300rpx;
+}
+.img{
+  width: 100%;
+  height: 300rpx;
+}
+.BoxsBar{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.Boxs{
+  width: 50%;
+  height: 300rpx;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.Box{
+  width: 350rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+  background-color: #dbdd73;
+}
+.List{
+  display: flex;
+  margin-left:10rpx;
+}
+.image{
+  height: 50rpx; 
+  width: 50rpx;
+}
+.text{
+  width: 54%;
+}
+.switch{
+  zoom:0.8;
+  width: 46%;
+  text-align:right;
+}

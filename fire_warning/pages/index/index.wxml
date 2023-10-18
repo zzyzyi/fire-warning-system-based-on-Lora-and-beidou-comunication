@@ -1,0 +1,126 @@
+<view>
+  <view class="background">
+    <!-- 背景轮播图 -->
+    <view>
+      <swiper class="swiper" autoplay="true" indicator-dots="true" circular="true">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="item">
+          <image src="{{item}}" st class="img" />
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 数据显示 -->
+    <view class="BoxsBar">
+    <!-- 节点1 -->
+    <view class="Boxs">
+      <view class="Box">
+        <view style="font-weight:bold">{{node1}}</view>
+        <view class="List">
+          <image class="image" src="/static/icons/temp.png"></image>
+          <view>温度：{{temp1}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/humi.png"></image>
+          <view>湿度：{{humi1}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/facility.png"></image>
+          <view>烟雾浓度：{{adc1}}</view>
+        </view> 
+        <view class="List">
+          <image class="image" src="/static/icons/sun.png"></image>
+          <view>光照强度：{{sun1}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/product.png"></image>
+          <view class="text">{{nodefacility1}}</view>
+          <switch class="switch" bindchange="nodeOneSwitch" checked="{{state1}}"></switch>
+        </view>
+      </view>
+    </view>
+    <!-- 节点2 -->
+    <view class="Boxs">
+      <view class="Box">
+        <view style="font-weight:bold">{{node2}}</view>
+        <view class="List">
+          <image class="image" src="/static/icons/temp.png"></image>
+          <view>温度：{{temp2}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/humi.png"></image>
+          <view>湿度：{{humi2}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/facility.png"></image>
+          <view>烟雾浓度：{{adc2}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/sun.png"></image>
+          <view>光照强度：{{sun2}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/product.png"></image>
+          <view class="text">{{nodefacility2}}</view>
+          <switch class="switch" bindchange="nodeTwoSwitch" checked="{{state2}}"></switch>
+        </view>
+      </view>
+    </view>
+    <!-- 节点3 -->
+    <view class="Boxs">
+      <view class="Box">
+        <view style="font-weight:bold">{{node3}}</view>
+        <view class="List">
+          <image class="image" src="/static/icons/temp.png"></image>
+          <view>温度：{{temp3}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/humi.png"></image>
+          <view>湿度：{{humi3}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/facility.png"></image>
+          <view>烟雾浓度：{{adc3}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/sun.png"></image>
+          <view>光照强度：{{sun3}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/product.png"></image>
+          <view class="text">{{nodefacility3}}</view>
+          <switch class="switch" bindchange="nodeThreeSwitch" checked="{{state3}}"></switch>
+        </view>
+      </view>
+    </view>
+    <!-- 节点4 -->
+    <view class="Boxs">
+      <view class="Box">
+        <view style="font-weight:bold">{{node4}}</view>
+        <view class="List">
+          <image class="image" src="/static/icons/temp.png"></image>
+          <view>温度：{{temp4}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/humi.png"></image>
+          <view>湿度：{{humi4}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/facility.png"></image>
+          <view>烟雾浓度：{{adc4}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/sun.png"></image>
+          <view>光照强度：{{sun4}}</view>
+        </view>
+        <view class="List">
+          <image class="image" src="/static/icons/product.png"></image>
+          <view class="text">{{nodefacility4}}</view>
+          <switch class="switch" bindchange="nodeFourSwitch" checked="{{state4}}"></switch>
+        </view>
+      </view>
+    </view>
+
+   </view>
+  </view>
+
+
+</view>
